@@ -6,17 +6,13 @@ function resolveApp(relativePath) {
   return path.resolve(appDirectory, relativePath);
 }
 
-const publicPath = '/';
-
 module.exports = {
-  entry: {
-    index: resolveApp('index.js'),
-  },
+  entry: resolveApp('index.js'),
   output: {
     path: resolveApp('lib'),
-    pathinfo: false,
-    publicPath,
-    filename: '[name].js',
+    filename: 'index.js',
+    library: 'reapopDarkTheme',
+    libraryTarget: 'umd',
   },
   resolve: {
     extensions: ['.js'],
@@ -25,7 +21,7 @@ module.exports = {
     rules: [
       {
         test: /\.js$/,
-        exclude: /(node_modules)/,
+        exclude: /node_modules/,
         loader: 'babel-loader',
         options: {
           cacheDirectory: true,

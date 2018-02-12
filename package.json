@@ -1,6 +1,6 @@
 {
   "name": "@infotech/reapop-dark-theme",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Dark theme for reapop notifications",
   "main": "lib/index.js",
   "scripts": {
@@ -25,6 +25,9 @@
     "rimraf": "^2.6.2",
     "style-loader": "^0.20.1",
     "webpack": "^3.11.0"
+  },
+  "publishConfig": {
+    "registry": "http://nexus.infotech.team/repository/npm-hosted/"
   },
   "files": [
     "lib/"
