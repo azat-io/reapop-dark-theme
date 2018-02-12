@@ -1,0 +1,49 @@
+{
+  "parser": "babel-eslint",
+  "extends": [
+    "airbnb"
+  ],
+  "globals": {
+    "kendo": true,
+    "jQuery": true,
+    "RFR": true,
+    "$": true,
+    "window": true,
+    "_": true
+  },
+  "plugins": [
+    "flowtype"
+  ],
+  "rules": {
+    "max-len": [
+      "warn",
+      120
+    ],
+    "no-confusing-arrow": "warn",
+    "arrow-body-style": [
+      "error",
+      "as-needed"
+    ],
+    "import/no-named-as-default-member": "off",
+    "import/no-extraneous-dependencies": 0,
+    "import/no-unresolved": 0,
+    "indent": [
+      "error",
+      2,
+      { "SwitchCase": 1 }
+    ],
+    "space-before-function-paren": "off",
+    "no-param-reassign": "warn",
+    "no-nested-ternary": "warn",
+    "class-methods-use-this": "off",
+    "no-underscore-dangle": "off",
+    "react/jsx-filename-extension": 0
+  },
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "config": "webpack.config.js"
+      }
+    }
+  }
+}

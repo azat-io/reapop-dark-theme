@@ -1,0 +1,146 @@
+.main {
+  display: flex;
+  box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.16);
+  background-color: #6f6f6f;
+}
+
+.meta {
+  padding: 9px 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.notification--info,
+.notification--warning,
+.notification--error {
+  border-radius: 2px;
+}
+
+.icon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0 10px 10px;
+  flex: 0;
+
+  &::before {
+    content: '';
+    width: 32px;
+    height: 32px;
+    opacity: 0.96;
+    background-color: #f2f2f2;
+    border-radius: 50%;
+  }
+}
+
+.buttons {
+  flex: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-right: 11px;
+}
+
+.button {
+  background: transparent;
+  border: 0;
+  opacity: 0.8;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: #fff;
+  outline: none;
+  margin: 0 5px;
+  text-transform: uppercase;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.message {
+  font-size: 12px;
+  font-weight: 400;
+  color: #fff;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  color: #fff;
+  margin: 0;
+  line-height: 1.5;
+}
+
+.close-button-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 0;
+}
+
+.close-button {
+  top: 0;
+  color: #fff;
+  opacity: 0.8;
+  margin: 0 16px 0 5px;
+
+  &:global(.k-icon) {
+    color: #fff;
+    opacity: 0.8;
+  }
+}
+
+.image {
+  content: '';
+  width: 32px;
+  height: 32px;
+  opacity: 0.96;
+  background-color: #f2f2f2;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 30px;
+
+  & svg {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+
+    & path {
+      fill: inherit;
+    }
+  }
+}
+
+.notification--warning .image svg,
+.notification--error .image svg {
+  color: #e04a4a;
+}
+
+.notification--info .image svg {
+  color: #2db528;
+}
+
+.notification--error {
+  border-radius: 2px;
+}
+
+.image-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px 0 10px 10px;
+  flex: 0;
+}
+
+.system.system-important {
+  font-family: inherit;
+
+  & .container-bl {
+    width: 548px;
+  }
+}

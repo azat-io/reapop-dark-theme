@@ -1,0 +1,10 @@
+.cache-*
+.idea
+.env
+*.iml
+build
+node_modules
+npm-debug.log
+lib
+
+.npmrc
