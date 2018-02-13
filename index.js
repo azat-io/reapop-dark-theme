@@ -32,7 +32,7 @@ export default {
       message: styles.message,
       title: styles.title,
       closeButtonContainer: styles['close-button-container'],
-      closeButton: `k-icon k-font-icon k-i-x close ${styles['close-button']}`,
+      closeButton: `${styles['close-button']}`,
     },
   },
   notificationsContainer: {

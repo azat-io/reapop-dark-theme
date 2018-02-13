@@ -1,6 +1,6 @@
 {
   "name": "@infotech/reapop-dark-theme",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Dark theme for reapop notifications",
   "main": "lib/index.js",
   "scripts": {

@@ -84,13 +84,18 @@
 }
 
 .close-button {
-  top: 0;
-  color: #fff;
-  opacity: 0.8;
+  position: relative;
   margin: 0 16px 0 5px;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
 
-  &:global(.k-icon) {
-    color: #fff;
+  &::after {
+    content: '';
+    display: inline-block;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cpath fill='%23fff' d='M13.656 12.242l3.536-3.536a1 1 0 0 0-1.414-1.413l-3.536 3.535-3.536-3.535a1 1 0 0 0-1.413 1.413l3.535 3.537-3.535 3.535a1 1 0 0 0 1.413 1.414l3.537-3.536 3.535 3.536a.997.997 0 0 0 1.414 0 1 1 0 0 0 0-1.414l-3.536-3.536z'/%3E%3Cpath d='M0 0h24v24H0z'/%3E%3C/g%3E%3C/svg%3E");
+    width: 24px;
+    height: 24px;
     opacity: 0.8;
   }
 }
